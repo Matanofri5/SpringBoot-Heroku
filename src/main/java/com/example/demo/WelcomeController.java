@@ -8,7 +8,7 @@ public class WelcomeController {
 
 	@GetMapping("/welcome")
 	public String welcome() {
-		return "welcome to spring boot heroku demo";
+		return "welcome to spring boot heroku demo !!";
 	}
 	
 }
