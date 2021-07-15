@@ -55,11 +55,11 @@ public class WelcomeController {
 	}
 	
 	
-//	@GetMapping("/getAllCustomers")
-//	public ResponseEntity<List<Customer>> allCustomers() {
-//		ResponseEntity<List<Customer>> result = new ResponseEntity<List<Customer>>(customerRepo.getAllCustomers(),
-//				HttpStatus.OK);
-//		return result;
-//	}
+	@GetMapping("/getAllCustomers")
+	public ResponseEntity<List<Customer>> allCustomers() {
+		ResponseEntity<List<Customer>> result = new ResponseEntity<List<Customer>>(customerServiceImpl.getAllCustomers(),
+				HttpStatus.OK);
+		return result;
+	}
 	
 }

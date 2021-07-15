@@ -36,8 +36,9 @@ public class CustomerService  implements CustomerServiceImpl{
 		}
 		return customer;
 	}
-//	public List<Customer> getAllCustomers(){
-//		return customerRepo.findAll();
-//	}
+	
+	public List<Customer> getAllCustomers(){
+		return customerRepo.findAll();
+	}
 
 }
