@@ -11,6 +11,7 @@ public class SpringbootHerokuDemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringbootHerokuDemoApplication.class, args);
+		System.out.println("Application is running !!!!");
 	}
 
 }
