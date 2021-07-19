@@ -17,16 +17,21 @@ import lombok.NoArgsConstructor;
 public class Customer {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 	
 	private String firstName;
 	
 	private String lastName;
 		
 	private String street;
+			
 	
-	private int idCard;
-		
+	public Customer (String firstName, String lastName, String street) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.street = street;
+	}
 
 }
