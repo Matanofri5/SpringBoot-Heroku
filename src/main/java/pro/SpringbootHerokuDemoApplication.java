@@ -12,7 +12,7 @@ import pro.repository.CustomerRepository;
 
 @SpringBootApplication
 @ComponentScan({ "pro" })
-public class SpringbootHerokuDemoApplication implements CommandLineRunner{
+public class SpringbootHerokuDemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringbootHerokuDemoApplication.class, args);
@@ -23,13 +23,13 @@ public class SpringbootHerokuDemoApplication implements CommandLineRunner{
 	private CustomerRepository customerRepository;
 	
 	
-	@Override
-	public void run(String... args) throws Exception {
-		this.customerRepository.save(new Customer("Matan", "Ofri", "Menashe 3"));
-		this.customerRepository.save(new Customer("idan", "Ofri", "Menashe 3"));
-		this.customerRepository.save(new Customer("Nissim", "Ofri", "Menashe 3"));
-		this.customerRepository.save(new Customer("Shani", "Ofri", "Eilat"));
-		
-	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		this.customerRepository.save(new Customer("Matan", "Ofri", "Menashe 3"));
+//		this.customerRepository.save(new Customer("idan", "Ofri", "Menashe 3"));
+//		this.customerRepository.save(new Customer("Nissim", "Ofri", "Menashe 3"));
+//		this.customerRepository.save(new Customer("Shani", "Ofri", "Eilat"));
+//		
+//	}
 
 }
