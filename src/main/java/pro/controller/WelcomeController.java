@@ -15,7 +15,7 @@ import pro.beans.Customer;
 import pro.repository.CustomerRepository;
 import pro.service.impl.CustomerServiceImpl;
 
-@CrossOrigin(origins = "https://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class WelcomeController {
 	
